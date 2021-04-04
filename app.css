@@ -32,6 +32,7 @@ h2 {
     font-size: 4.2rem;
     margin-bottom: 4rem;
     font-weight: 700;
+    color: rgb(48, 89, 102);
 }
 
 h3 {
@@ -109,4 +110,15 @@ input {
 
 input::placeholder {
     color: #aaa;
+}
+
+.textInput {
+    font-size: 1.9rem;
+    color: rgb(51, 136, 179);
+}
+
+
+.Great {
+    font-size: 5.9rem;
+    color: rgb(48, 89, 102);
 }
