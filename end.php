@@ -39,16 +39,18 @@
             
             if ( mysqli_query($conn, $query) ) {
                 print("insert executed successfully     <br>");
+                header('Location: game.html');
                 
             }
             else {
                 print("Error insert: " . mysqli_connect_error($conn));
-                header('Location: https://github.com/Dirk-Sandberg/plyer');
+                
             }
                 
         }
         else {
-            print("username is already exist");
+            print("Username is already exist, try again");
+            header('Location: https://github.com/Dirk-Sandberg/plyer');
         }
 
         mysqli_close($conn);
@@ -64,10 +66,10 @@
             <div id="end"  class= "flex-center flex-column">   
                 <h1 id= "finalScore">     </h1>
 
-                <div class= "geart">   Great!  <?php   print($username);    ?>     </div>
+                <h3>   Great!  <?php   print($username);    ?>     </h3>
 
                 <form>
-                    <button type="submit"   class= "btn"            id= "saveScoreBtn"    onclick= "saveHighScore(event)"    disabled>   Save     </button>
+                    <button type="submit"   class= "btn"            id= "saveScoreBtn"    onclick= "saveHighScore(event)">   Save     </button>
                 </form>
 
                 <a  class= "btn"       href= "game.html">   Play Again  </a>
