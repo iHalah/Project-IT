@@ -4,7 +4,7 @@
 }
 
 .high-score {
-    font-size: 2rem;
+    font-size:1rem;
     margin-bottom: 0.5rem;
     color: rgb(98, 94, 94);
 }
@@ -13,3 +13,30 @@
     transform: scale(1.5);
     color: rgb(101, 155, 235);
 }
+
+
+table {
+    width: 50%;
+    margin-bottom: 3rem;
+  }
+
+th {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    color: rgb(48, 89, 102);
+    height: 50px;
+  }  
+
+
+td {
+    text-align: center;
+    color: #aaa
+  }  
+
+  th, td {
+    border-bottom: 1px solid #ddd;
+  }  
+
+
+tr:nth-child(even) {background-color: #f2f2f2;}
